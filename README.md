@@ -13,36 +13,6 @@
 - `CONTRIBUTING.md` — the fixed contributing guide (submit this as your PR)
 - `PR_SUBMISSION_GUIDE.md` — exact steps to fork, branch, commit, and open the PR
 
-## How to Submit the PR
-
-Follow `PR_SUBMISSION_GUIDE.md` exactly. The whole process takes about 15 minutes.
-
-```bash
-# 1. Fork Textualize/rich on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/rich.git
-cd rich
-
-# 2. Create your branch
-git checkout -b fix/poetry-shell-contributing-docs
-
-# 3. Replace CONTRIBUTING.md with the fixed version from this repo
-cp /path/to/this/CONTRIBUTING.md .
-
-# 4. Add yourself to CONTRIBUTORS.md (find your alphabetical place)
-
-# 5. Commit and push
-git add CONTRIBUTING.md CONTRIBUTORS.md
-git commit -m "docs: fix deprecated poetry shell command in CONTRIBUTING.md
-
-- Replaces `poetry shell` (removed in Poetry 2.0) with correct
-  `eval $(poetry env activate)` command
-- Adds note about the Poetry Shell plugin as an alternative
-- Fixes #3817"
-
-git push origin fix/poetry-shell-contributing-docs
-
-# 6. Open PR on GitHub → base: Textualize/rich:master
-```
 
 ## PR Title
 ```
